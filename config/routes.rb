@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root to: 'messages#index'
   namespace :api, default: { format: 'json'} do
-    get 'messages' => 'messages#index'
+    namespace :v1 do
+      get 'messages' => 'messages#index'
+    end
   end
 end
