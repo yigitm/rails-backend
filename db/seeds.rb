@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+Message.create(:message => "Merhaba")
+Message.create(:message => "Hello!")
+Message.create(:message => "Hola!")
+Message.create(:message => "konnichiwa!")
+Message.create(:message => "guten tag!")
